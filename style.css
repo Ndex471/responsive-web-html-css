@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #262626;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    padding: 25px 0;
+    text-align: center;
+    font-family: montserrat;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+nav ul li a:hover{
+    background-color: deepskyblue;
+}
+
+.right-content{
+    margin-left: 260px;
+}
+.section{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+.section:nth-child(2){
+    background-color: #fff;
+}
+.section:nth-child(3){
+    background-color: #fff;
+}
+.section:nth-child(4){
+    background-color: #fff;
+}
+
+.text-content h2{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.text-content p{
+    line-height: 2;
+}
+.text-content{
+    width: 75%;
+}
+
+#home{
+    background-image: url(https://www.imagesource.com/wp-content/uploads/2019/06/Rio.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.img-area{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 25px auto;
+    border: 15px double #fff;
+}
+.img-area img{
+    width: 100%;
+}
+
+@media (max-width: 900px){
+    nav{
+        background: #fff;
+        height: 86px;
+    }
+    nav ul{
+        width: 100%;
+        height: 60px;
+    }
+    nav ul li a{
+        border-bottom: none;
+        float: left;
+        margin-left: 100px;
+    }
+    nav ul li a:hover{
+        background-color: transparent;
+    }
+    .right-content{
+        margin-left: 0;
+    }
+    .img-area{
+        display: none;
+    }
+    .text-content h2{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px){
+    nav{
+        background: #fff;
+        height: 60px;
+    }
+    nav ul li a:hover{
+        background-color: transparent;
+    }
+    nav ul{
+        width: 100%;
+        height: 60px;
+    }
+    nav ul li a{
+        border-bottom: none;
+        float: left;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    .right-content{
+        margin-left: 0;
+    }
+}
